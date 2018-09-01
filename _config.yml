@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
 title: GoodEnough Text To Speech
 description: Text To Speech description
-show_downloads: "true"
+show_downloads: "false"
 github:
   is_project_page: "false"
