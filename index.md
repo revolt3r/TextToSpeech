@@ -7,14 +7,14 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ### Controlling Speech Synthesis
 
 
-<details><summary><b>public static void Speak(string speechString)</b></summary>
+<details><summary><code>public static void Speak(string speechString)</code></summary>
 <p>
-<b>Description</b><br>
+<strong>Description</strong><br>
 Enqueues an utterance to be spoken using DefaultParameters<br>
-<b>Parameters</b><br>
+<strong>Parameters</strong><br>
   <i>speechString</i> - The text to be spoken in the utterance.<br>
-<b>Example</b><br>
-  <code>TTS.Speak("Hello world!");</code>
+<strong>Example</strong><br>
+  <code>TTS.Speak("Hello world!");</code><br>
 </p>
 </details>
 <br>
