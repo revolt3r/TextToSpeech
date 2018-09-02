@@ -289,7 +289,7 @@ Parameters that affect the speech.</p>
 
 #### Classes
 
-<p><details><summary><code>public enum VoiceQuality</code></summary>
+<p><details><summary><code>public enum SpeechBoundary</code></summary>
 <p><strong>Description</strong><br>
 Constraints describing when speech may be paused or stopped.</p>
   <p><strong>Values</strong><br>
