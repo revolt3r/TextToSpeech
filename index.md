@@ -264,14 +264,12 @@ Parameters that affect the speech.</p>
 #### Usages
 
 <p><details><summary><code>Using SpeechUtterance</code></summary>
-<p><strong>Example #1</strong><br>
-Returns all language codes (A BCP 47) for which voices are available.</p>
-<p><strong>Return value</strong><br>
-  Returns an array with all language codes (A BCP 47) for which voices are available.</p>
-<p><strong>Example</strong>
+<p><strong>Example #1</strong>
   <pre>
-  var languages = TTS.GetAllAvailableLanguages();
-  Debug.Log("There are voices available in " + languages.length + " languages");</pre></p>
+    var speech = new SpeechUtterance("Hello World!");
+    speech.PitchMultiplier = 2f;
+    speech.Voice = TTS.GetVoiceForLanguage("en-US");
+    TTS.Speak(speech);</pre></p>
 </details></p>
 
 ### Setting Callbacks
