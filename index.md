@@ -9,12 +9,12 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 <details><summary>public static void Speak(string speechString)</summary>
 <p>
-**Description**<br>
+####Description<br>
 Enqueues an utterance to be spoken using DefaultParameters<br>
-**Parameters**<br>
+####Parameters<br>
 speechString - The text to be spoken in the utterance.<br>
-**Example**<br>
-TTS.Speak("Hello world!");
+####Example<br>
+```TTS.Speak("Hello world!");```
 </p>
 </details>
 
