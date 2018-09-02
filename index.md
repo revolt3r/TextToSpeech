@@ -227,7 +227,7 @@ A chunk of text to be spoken, along with parameters that affect its speech.</p>
     <p><i>ISpeechSynthesisVoice Voice</i><br>
       The voice used to speak the utterance.<br>
   The default value is null, which causes the utterance to be spoken in the default voice.</p>
-  <i>float Volume</i><br>
+  <p><i>float Volume</i><br>
   The volume used when speaking the utterance.<br>
   Allowed values are in the range from 0.0 (silent) to 1.0 (loudest). The default volume is 1.0.</p></p>
 </details></p>
