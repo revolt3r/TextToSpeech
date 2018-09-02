@@ -1,5 +1,6 @@
 ## Documentation
 
+
 ### Synthesizing Speech
 
 <p><details><summary><code>public static void Speak(string speechString)</code></summary>
@@ -56,6 +57,7 @@ Enqueues an utterance to be spoken with using specific parameters</p>
   TTS.Speak(utterance);</pre></p>
 </details></p>
 
+
 ### Controlling Speech Synthesis
 
 <p><details><summary><code>public static bool Continue()</code></summary>
@@ -107,7 +109,6 @@ Stops all speech at the specified boundary constraint.</p>
   <pre>TTS.Stop(SpeechBoundary.Word);</pre></p>
 </details></p>
 
-### Callback Delegates
 
 ### Callback Delegates
 
@@ -120,7 +121,7 @@ TTS.onSpeechUtteranceCancelled = ClearTextProgress;
   
 private void LogOnCancelled
 {
-  Debug.Log("Utterance was cancelled");
+              Debug.Log("Utterance was cancelled");
 }
     </pre></p>
 </details></p>
