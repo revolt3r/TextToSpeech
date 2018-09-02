@@ -264,12 +264,27 @@ Parameters that affect the speech.</p>
 #### Usages
 
 <p><details><summary><code>Using SpeechUtterance</code></summary>
-<p><strong>Example #1</strong>
+<p><strong>Example</strong>
   <pre>
     var speech = new SpeechUtterance("Hello World!");
     speech.PitchMultiplier = 2f;
     speech.Voice = TTS.GetVoiceForLanguage("en-US");
     TTS.Speak(speech);</pre></p>
+</details></p>
+
+<p><details><summary><code>Using SpeechUtteranceParameters</code></summary>
+<p><strong>Example</strong>
+  <pre>
+    var parameters = new SpeechUtteranceParameters();
+    parameters.Voice = TTS.GetVoiceForLanguage("en-US");
+    parameters.SpeechRate = TTS.UtteranceMaximumSpeechRate;
+    parameters.PostUtteranceDelay = 0.3f;
+    <br>
+    var speech = new SpeechUtterance("Hello World!", parameters);
+    TTS.Speak(speech);
+    <br>
+    var anotherSpeech = new SpeechUtterance("Hello to you too!", parameters);
+    TTS.Speak(anotherSpeech);</pre></p>
 </details></p>
 
 ### Setting Callbacks
