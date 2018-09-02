@@ -6,7 +6,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### Controlling Speech Synthesis
 
-```markdown
+```
 #public static void Speak(string speechString)
 *Description*
 Enqueues an utterance to be spoken using DefaultParameters
