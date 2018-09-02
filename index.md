@@ -115,21 +115,30 @@ Stops all speech at the specified boundary constraint.</p>
 
 <p><details><summary><code>public interface ISpeechSynthesisVoice</code></summary>
 <p><strong>Description</strong><br>
-The voice used to speak the utterance.</p>
+The voice object used to speak the utterance.</p>
   <p><strong>Properties</strong><br>
   <p><i>string Identifier</i><br>
     The unique identifier for a voice object.</p>
-  <p><i>string Name</i><br>The name for a voice object.</p>
-  <p><i>string Language</i><br>A BCP 47 code identifying the voice’s language and locale.</p>
-  <p><i>VoiceQuality Quality</i><br>The speech quality for a voice object.</p>
+  <p><i>string Name</i><br>
+    The name for a voice object.</p>
+  <p><i>string Language</i><br>
+    A BCP 47 code identifying the voice’s language and locale.<br>
+    The locale of a voice reflects regional variations in pronunciation or accent; for example, a voice with code en-US speaks English text with a North American accent, and a voice with code en-AU speaks English text with an Australian accent.
+  </p>
+  <p><i>VoiceQuality Quality</i><br>
+    The speech quality for a voice object.<br>
+    Default - he lower quality version of a voice that is usually installed on the device by default.<br>
+    Enhanced - The higher quality version of a voice that is usually downloaded by the user.</p>
 </details></p>
 
 <p><details><summary><code>public enum VoiceQuality</code></summary>
 <p><strong>Description</strong><br>
 The speech quality for a voice object.</p>
   <p><strong>Values</strong><br>
-  <i>Default = 1</i> - The lower quality version of a voice that is usually installed on the device by default.<br>
-  <i>Enhanced = 2</i> - The higher quality version of a voice that is usually downloaded by the user.</p>
+  <p><i>Default = 1</i><br>
+    The lower quality version of a voice that is usually installed on the device by default.</p>
+  <p><i>Enhanced = 2</i><br>
+    The higher quality version of a voice that is usually downloaded by the user.</p>
 </details></p>
 
 #### Usages
