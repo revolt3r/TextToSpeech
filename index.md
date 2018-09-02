@@ -192,7 +192,7 @@ private void LogOnStarted()
 </pre></p>
 </details></p>
 
-<p><details><summary><code>public static StringUtteranceStringCallback onWillSpeakPartOfString</code></summary>
+<p><details><summary><code>public static StringSpeechUtteranceCallback onWillSpeakPartOfString</code></summary>
 <p><strong>Description</strong><br>
 Tells the delegate when the synthesizer is about to speak a portion of an utterance’s speechString.</p>
   <p><strong>Parameters</strong><br>
