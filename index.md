@@ -192,6 +192,23 @@ Returns all language codes (A BCP 47) for which voices are available.</p>
   Debug.Log("There are voices available in " + languages.length + " languages");</pre></p>
 </details></p>
 
+### Creating a speech with custom parameters
+
+#### Classes
+
+<p><details><summary><code>public class SpeechUtterance</code></summary>
+<p><strong>Description</strong><br>
+A chunk of text to be spoken, along with parameters that affect its speech.</p>
+  <p><strong>Properties</strong><br>
+  <i>string SpeechString</i> - The unique identifier for a voice object.<br>
+  <i>float PitchMultiplier</i> - The baseline pitch at which the utterance will be spoken.<br>
+  <i>float PreUtteranceDelay</i> - The amount of time in seconds a speech synthesizer will wait before actually speaking the utterance upon beginning to handle it.<br>
+    <i>float PostUtteranceDelay</i> - The amount of time in seconds a speech synthesizer will wait after the utterance is spoken before handling the next queued utterance.<br>
+    <i>float SpeechRate</i> - The rate at which the utterance will be spoken.<br>
+    <i>ISpeechSynthesisVoice Voice</i> - The voice used to speak the utterance.<br>
+  <i>float Volume</i> - The volume used when speaking the utterance.</p>
+</details></p>
+
 ### Setting Callbacks
 
 #### Delegate Types
