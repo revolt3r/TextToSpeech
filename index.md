@@ -4,7 +4,17 @@ You can use the [editor on GitHub](https://github.com/revolt3r/TextToSpeech/edit
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Controlling Speech Synthesis
+
+```markdown
+#public static void Speak(string speechString)
+*Description*
+Enqueues an utterance to be spoken using DefaultParameters
+*Parameters*
+speechString - The text to be spoken in the utterance.
+*Example*
+TTS.Speak("Hello world!");
+```
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
