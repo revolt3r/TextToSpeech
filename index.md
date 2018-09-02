@@ -109,14 +109,18 @@ Stops all speech at the specified boundary constraint.</p>
 
 ### Callback Delegates
 
+### Callback Delegates
+
 <p><details><summary><code>public static SpeechUtteranceCallback onSpeechUtteranceCancelled</code></summary>
 <p><strong>Description</strong><br>
 Called when the synthesizer has resumed speaking an utterance after being paused.</p>
 <p><strong>Example</strong>
-  <pre>TTS.onSpeechUtteranceCancelled = ClearTextProgress;
+  <pre>
+  TTS.onSpeechUtteranceCancelled = ClearTextProgress;
   
   private void LogOnCancelled
-    {
-        Debug.Log("Utterance was cancelled");
-    }</pre></p>
+  {
+      Debug.Log("Utterance was cancelled");
+  }
+    </pre></p>
 </details></p>
