@@ -7,13 +7,13 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ### Controlling Speech Synthesis
 
 
-    `public static void Speak(string speechString)`
-    **Description**
-    Enqueues an utterance to be spoken using DefaultParameters
-    **Parameters**
-    speechString - The text to be spoken in the utterance.
-    **Example**
-    TTS.Speak("Hello world!");
+`public static void Speak(string speechString)`
+**Description**
+Enqueues an utterance to be spoken using DefaultParameters
+**Parameters**
+speechString - The text to be spoken in the utterance.
+**Example**
+TTS.Speak("Hello world!");
 
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
