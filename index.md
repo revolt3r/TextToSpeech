@@ -285,6 +285,41 @@ Parameters that affect the speech.</p>
     TTS.Speak(anotherSpeech);</pre></p>
 </details></p>
 
+### Modifying Default Behaviour
+
+<p><details><summary><code>public static SpeechUtteranceParameters DefaultParameters</code></summary>
+<p><strong>Description</strong><br>
+Parameters used when calling Speak(string speechString)</p>
+<p><strong>Example</strong>
+  <pre>
+    TTS.DefaultParameters.Voice = TTS.GetVoiceForLanguage("en-US");
+    TTS.DefaultParameters.PitchMultiplier = 0.5f;
+    TTS.DefaultParameters.Volume = 0.8f;
+    TTS.Speak("Hello world!");</pre></p>
+</details></p>
+
+<p><details><summary><code>public static SpeechBoundary DefaultSpeechBoundaryForPause</code></summary>
+<p><strong>Description</strong><br>
+Constraints describing when speech may be paused<br>
+Immediate - Indicates that speech should pause or stop immediately.<br>
+Word - Indicates that speech should pause or stop after the word currently being spoken.</p>
+<p><strong>Example</strong>
+  <pre>
+    TTS.DefaultSpeechBoundaryForPause = SpeechBoundary.Word;
+    TTS.Pause();</pre></p>
+</details></p>
+
+<p><details><summary><code>public static SpeechBoundary DefaultSpeechBoundaryForStop</code></summary>
+<p><strong>Description</strong><br>
+Constraints describing when speech may be stopped.<br>
+Immediate - Indicates that speech should pause or stop immediately.<br>
+Word - Indicates that speech should pause or stop after the word currently being spoken.</p>
+<p><strong>Example</strong>
+  <pre>
+    TTS.DefaultSpeechBoundaryForStop = SpeechBoundary.Word;
+    TTS.Stop();</pre></p>
+</details></p>
+
 ### Setting Callbacks
 
 #### Delegate Types
