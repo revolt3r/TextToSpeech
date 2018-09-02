@@ -159,7 +159,7 @@ Returns all available voice objects for the specified language and locale.</p>
   Debug.Log("There are " + voices.Length + "voices available for en-US");</pre></p>
 </details></p>
 
-<p><details><summary><code><pre>public static ReadOnlyCollection<ISpeechSynthesisVoice> AllAvailableVoices</pre></code></summary>
+<p><details><summary><code><cseignore>public static ReadOnlyCollection<ISpeechSynthesisVoice> AllAvailableVoices</cseignore></code></summary>
 <p><strong>Description</strong><br>
 Returns all available voices.</p>
 <p><strong>Return value</strong><br>
