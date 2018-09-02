@@ -14,7 +14,7 @@ Enqueues an utterance to be spoken using DefaultParameters<br>
 <strong>Parameters</strong><br>
   <i>speechString</i> - The text to be spoken in the utterance.<br>
 <strong>Example</strong><br>
-  <code>TTS.Speak("Hello world!");</code><br>
+  <pre>TTS.Speak("Hello world!");</pre><br>
 </p>
 </details>
 <br>
@@ -27,7 +27,7 @@ Enqueues an utterance to be spoken using a voice object for the specified langua
   <i>speechString</i> - The text to be spoken in the utterance.<br>
   <i>language</i> - A BCP 47 code specifying language and locale for a voice.<br>
 <strong>Example</strong><br>
-  <code>TTS.Speak("Hello world!", "en-US");</code><br>
+  <pre>TTS.Speak("Hello world!", "en-US");</pre><br>
 </p>
 </details>
 <br>
@@ -40,8 +40,9 @@ Enqueues an utterance to be spoken using a specific voice object<br>
   <i>speechString</i> - The text to be spoken in the utterance.<br>
   <i>voice</i> - The voice used to speak the utterance.<br>
 <strong>Example</strong><br>
-  <code>var voice = TTS.GetVoiceForLanguage("en-US");<br />
-  TTS.Speak("Hello world!", voice);</code><br>
+  <pre>
+  var voice = TTS.GetVoiceForLanguage("en-US");
+  TTS.Speak("Hello world!", voice);</pre><br>
 </p>
 </details>
 <br>
@@ -54,22 +55,22 @@ Enqueues an utterance to be spoken with default voice using specific parameters<
   <i>speechString</i> - The text to be spoken in the utterance.<br>
   <i>speechUtteranceParameters</i> - Parameters that affect the speech<br>
 <strong>Example</strong><br>
-  <code>var parameters = new SpeechUtteranceParameters();<br />
-  TTS.Speak("Hello world!", parameters);</code><br>
+  <pre>
+  var parameters = new SpeechUtteranceParameters();
+  TTS.Speak("Hello world!", parameters);</pre><br>
 </p>
 </details>
 <br>
 
 <details><summary><code>public static void Speak(SpeechUtterance speechUtterance)</code></summary>
-<p>
 <strong>Description</strong><br>
-Enqueues an utterance to be spoken with using specific parametersbr>
+Enqueues an utterance to be spoken with using specific parameters<br>
 <strong>Parameters</strong><br>
   <i>speechUtterance</i> - A chunk of text to be spoken, along with parameters that affect its speech.<br>
 <strong>Example</strong><br>
-  <code>var utterance = new SpeechUtterance("Hello world!");<br />
-  TTS.Speak(utterance);</code><br>
-</p>
+  <pre>
+  var utterance = new SpeechUtterance("Hello world!");
+  TTS.Speak(utterance);</pre><br>
 </details>
 <br>
 
