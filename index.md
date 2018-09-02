@@ -7,7 +7,7 @@
 <p><strong>Description</strong><br>
 Enqueues an utterance to be spoken using DefaultParameters</p>
 <p><strong>Parameters</strong><br>
-  <i>speechString</i> - The text to be spoken in the utterance.</p>
+  <i>string speechString</i> - The text to be spoken in the utterance.</p>
 <p><strong>Example</strong>
   <pre>TTS.Speak("Hello world!");</pre></p>
 </details></p>
@@ -16,8 +16,8 @@ Enqueues an utterance to be spoken using DefaultParameters</p>
 <p><strong>Description</strong><br>
 Enqueues an utterance to be spoken using a voice object for the specified language and locale.</p>
 <p><strong>Parameters</strong><br>
-  <i>speechString</i> - The text to be spoken in the utterance.<br>
-  <i>language</i> - A BCP 47 code specifying language and locale for a voice.</p>
+  <i>string speechString</i> - The text to be spoken in the utterance.<br>
+  <i>string language</i> - A BCP 47 code specifying language and locale for a voice.</p>
 <p><strong>Example</strong>
   <pre>TTS.Speak("Hello world!", "en-US");</pre></p>
 </details></p>
@@ -26,8 +26,8 @@ Enqueues an utterance to be spoken using a voice object for the specified langua
 <p><strong>Description</strong><br>
 Enqueues an utterance to be spoken using a specific voice object</p>
 <p><strong>Parameters</strong><br>
-  <i>speechString</i> - The text to be spoken in the utterance.<br>
-  <i>voice</i> - The voice used to speak the utterance.</p>
+  <i>string speechString</i> - The text to be spoken in the utterance.<br>
+  <i>ISpeechSynthesisVoice voice</i> - The voice used to speak the utterance.</p>
 <p><strong>Example</strong>
   <pre>
   var voice = TTS.GetVoiceForLanguage("en-US");
@@ -38,8 +38,8 @@ Enqueues an utterance to be spoken using a specific voice object</p>
 <p><strong>Description</strong><br>
 Enqueues an utterance to be spoken with default voice using specific parameters</p>
 <p><strong>Parameters</strong><br>
-  <i>speechString</i> - The text to be spoken in the utterance.<br>
-  <i>speechUtteranceParameters</i> - Parameters that affect the speech</p>
+  <i>string speechString</i> - The text to be spoken in the utterance.<br>
+  <i>SpeechUtteranceParameters speechUtteranceParameters</i> - Parameters that affect the speech</p>
 <p><strong>Example</strong>
   <pre>
   var parameters = new SpeechUtteranceParameters();
@@ -50,7 +50,7 @@ Enqueues an utterance to be spoken with default voice using specific parameters<
 <p><strong>Description</strong><br>
 Enqueues an utterance to be spoken with using specific parameters</p>
 <p><strong>Parameters</strong><br>
-  <i>speechUtterance</i> - A chunk of text to be spoken, along with parameters that affect its speech.</p>
+  <i>SpeechUtterance speechUtterance</i> - A chunk of text to be spoken, along with parameters that affect its speech.</p>
 <p><strong>Example</strong>
   <pre>
   var utterance = new SpeechUtterance("Hello world!");
@@ -82,7 +82,7 @@ Pauses speech at default boundary constraints.</p>
 <p><strong>Description</strong><br>
 Pauses speech at the specified boundary constraint.</p>
   <p><strong>Parameters</strong><br>
-  <i>speechBoundary</i> - A constant describing whether speech should pause immediately or only after finishing the word currently being spoken.</p>
+  <i>SpeechBoundary speechBoundary</i> - A constant describing whether speech should pause immediately or only after finishing the word currently being spoken.</p>
 <p><strong>Returns</strong><br>
   Returns true if speech has paused, or false otherwise.</p>
 <p><strong>Example</strong>
@@ -102,7 +102,7 @@ Stops all speech at default boundary constraints.</p>
 <p><strong>Description</strong><br>
 Stops all speech at the specified boundary constraint.</p>
   <p><strong>Parameters</strong><br>
-  <i>speechBoundary</i> - A constant describing whether speech should stop immediately or only after finishing the word currently being spoken.</p>
+  <i>SpeechBoundary speechBoundary</i> - A constant describing whether speech should stop immediately or only after finishing the word currently being spoken.</p>
 <p><strong>Returns</strong><br>
   Returns true if speech has stopped, or false otherwise.</p>
 <p><strong>Example</strong>
