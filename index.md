@@ -235,6 +235,32 @@ A chunk of text to be spoken, along with parameters that affect its speech.</p>
   <pre>public SpeechUtterance(string speechString, SpeechUtteranceParameters parameters)</pre></p></p>
 </details></p>
 
+<p><details><summary><code>public class SpeechUtteranceParameters</code></summary>
+<p><strong>Description</strong><br>
+Parameters that affect the speech.</p>
+  <p><strong>Properties</strong><br>
+  <p><i>float PitchMultiplier</i><br>
+    The baseline pitch at which the utterance will be spoken.<br>
+  The default pitch is 1.0. Allowed values are in the range from 0.5 (for lower pitch) to 2.0 (for higher pitch).</p>
+  <p><i>float PreUtteranceDelay</i><br>
+    The amount of time in seconds a speech synthesizer will wait before actually speaking the utterance upon beginning to handle it.<br>
+  When two or more utterances are spoken, the time between periods when either is audible will be at least the sum of the first utterance’s postUtteranceDelay and the second utterance’s preUtteranceDelay.</p>
+    <p><i>float PostUtteranceDelay</i><br>
+      The amount of time in seconds a speech synthesizer will wait after the utterance is spoken before handling the next queued utterance.<br>
+  When two or more utterances are spoken, the time between periods when either is audible will be at least the sum of the first utterance’s postUtteranceDelay and the second utterance’s preUtteranceDelay.</p>
+    <p><i>float SpeechRate</i><br>
+      The rate at which the utterance will be spoken.<br>
+  Speech rates are values in the range between UtteranceMinimumSpeechRate and UtteranceMaximumSpeechRate. Lower values correspond to slower speech, and vice versa. The default value is UtteranceDefaultSpeechRate.</p>
+    <p><i>ISpeechSynthesisVoice Voice</i><br>
+      The voice used to speak the utterance.<br>
+  The default value is null, which causes the utterance to be spoken in the default voice.</p>
+  <p><i>float Volume</i><br>
+  The volume used when speaking the utterance.<br>
+  Allowed values are in the range from 0.0 (silent) to 1.0 (loudest). The default volume is 1.0.</p>
+  <p><strong>Constructors</strong>
+  <pre>public SpeechUtteranceParameters()</pre>
+</details></p>
+
 ### Setting Callbacks
 
 #### Delegate Types
