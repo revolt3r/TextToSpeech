@@ -189,7 +189,7 @@ Returns all language codes (A BCP 47) for which voices are available.</p>
 <p><strong>Example</strong>
   <pre>
   var languages = TTS.GetAllAvailableLanguages();
-  Debug.Log("There are voice available in " + languages.length + " languages");</pre></p>
+  Debug.Log("There are voices available in " + languages.length + " languages");</pre></p>
 </details></p>
 
 ### Setting Callbacks
