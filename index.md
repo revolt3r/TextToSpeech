@@ -118,12 +118,12 @@ Called when the synthesizer has resumed speaking an utterance after being paused
 <p><strong>Example</strong>
 <pre>privat void Start()
 {
-  TTS.onSpeechUtteranceCancelled = ClearTextProgress;
+    TTS.onSpeechUtteranceCancelled = ClearTextProgress;
 }
 
 private void LogOnCancelled()
 {
-  Debug.Log("Utterance was cancelled");
+    Debug.Log("Utterance was cancelled");
 }
 </pre></p>
 </details></p>
