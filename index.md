@@ -128,7 +128,7 @@ The voice used to speak the utterance.</p>
 The speech quality for a voice object.</p>
   <p><strong>Values</strong><br>
   <i>Default = 1</i> - The lower quality version of a voice that is usually installed on the device by default.<br>
-  <i>Enhanced = 2</i> - The higher quality version of a voice that is usually downloaded by the user.<br>
+  <i>Enhanced = 2</i> - The higher quality version of a voice that is usually downloaded by the user.</p>
 </details></p>
 
 #### Usages
