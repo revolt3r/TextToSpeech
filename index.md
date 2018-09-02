@@ -179,7 +179,7 @@ private void LogOnFinished()
 
 <p><details><summary><code>public static SpeechUtteranceCallback onSpeechUtterancePaused</code></summary>
 <p><strong>Description</strong><br>
-Tells the delegate when the synthesizer has paused while speaking an utterance.</p>
+Called when the synthesizer has paused while speaking an utterance.</p>
 <p><strong>Example</strong>
 <pre>private void Start()
 {
@@ -195,7 +195,7 @@ private void LogOnPaused()
 
 <p><details><summary><code>public static SpeechUtteranceCallback onSpeechUtteranceStarted</code></summary>
 <p><strong>Description</strong><br>
-Tells the delegate when the synthesizer has begun speaking an utterance.</p>
+Called when the synthesizer has begun speaking an utterance.</p>
 <p><strong>Example</strong>
 <pre>private void Start()
 {
@@ -211,7 +211,7 @@ private void LogOnStarted()
 
 <p><details><summary><code>public static StringSpeechUtteranceCallback onWillSpeakPartOfString</code></summary>
 <p><strong>Description</strong><br>
-Tells the delegate when the synthesizer is about to speak a portion of an utterance’s speechString.</p>
+Called when the synthesizer is about to speak a portion of an utterance’s speechString.</p>
   <p><strong>Parameters</strong><br>
   <i>int startIndex</i> - The start index of the spoken part of the utterance string.<br>
   <i>int stringLength</i> - The number of characters in the spoken part of the utterance string.<br>
