@@ -229,7 +229,11 @@ A chunk of text to be spoken, along with parameters that affect its speech.</p>
   The default value is null, which causes the utterance to be spoken in the default voice.</p>
   <p><i>float Volume</i><br>
   The volume used when speaking the utterance.<br>
-  Allowed values are in the range from 0.0 (silent) to 1.0 (loudest). The default volume is 1.0.</p></p>
+  Allowed values are in the range from 0.0 (silent) to 1.0 (loudest). The default volume is 1.0.</p>
+  <p><strong>Constructors</strong>
+  <pre>
+  public SpeechUtterance(string speechString)<br>
+  public SpeechUtterance(string speechString, SpeechUtteranceParameters parameters)</pre></p></p>
 </details></p>
 
 ### Setting Callbacks
