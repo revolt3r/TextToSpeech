@@ -258,7 +258,7 @@ Parameters that affect the speech.</p>
   The volume used when speaking the utterance.<br>
   Allowed values are in the range from 0.0 (silent) to 1.0 (loudest). The default volume is 1.0.</p>
   <p><strong>Constructors</strong>
-  <pre>public SpeechUtteranceParameters()</pre></p>
+  <pre>public SpeechUtteranceParameters()</pre></p></p>
 </details></p>
 
 ### Setting Callbacks
