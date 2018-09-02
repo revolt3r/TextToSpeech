@@ -116,14 +116,95 @@ Stops all speech at the specified boundary constraint.</p>
 <p><strong>Description</strong><br>
 Called when the synthesizer has resumed speaking an utterance after being paused.</p>
 <p><strong>Example</strong>
-<pre>privat void Start()
+<pre>private void Start()
 {
-    TTS.onSpeechUtteranceCancelled = ClearTextProgress;
+    TTS.onSpeechUtteranceCancelled = LogOnCancelled;
 }
 
 private void LogOnCancelled()
 {
     Debug.Log("Utterance was cancelled");
+}
+</pre></p>
+</details></p>
+
+<p><details><summary><code>public static SpeechUtteranceCallback onSpeechUtteranceContinued</code></summary>
+<p><strong>Description</strong><br>
+Called when the synthesizer has resumed speaking an utterance after being paused.</p>
+<p><strong>Example</strong>
+<pre>private void Start()
+{
+    TTS.onSpeechUtteranceContinued = LogOnContinued;
+}
+
+private void LogOnContinued()
+{
+    Debug.Log("Utterance was unpaused");
+}
+</pre></p>
+</details></p>
+
+<p><details><summary><code>public static SpeechUtteranceCallback onSpeechUtteranceFinished</code></summary>
+<p><strong>Description</strong><br>
+Called when the synthesizer has finished speaking an utterance.</p>
+<p><strong>Example</strong>
+<pre>private void Start()
+{
+    TTS.onSpeechUtteranceFinished = LogOnFinished;
+}
+
+private void LogOnFinished()
+{
+    Debug.Log("Finished speaking an utterance");
+}
+</pre></p>
+</details></p>
+
+<p><details><summary><code>public static SpeechUtteranceCallback onSpeechUtterancePaused</code></summary>
+<p><strong>Description</strong><br>
+Tells the delegate when the synthesizer has paused while speaking an utterance.</p>
+<p><strong>Example</strong>
+<pre>private void Start()
+{
+    TTS.onSpeechUtterancePaused = LogOnPaused;
+}
+
+private void LogOnPaused()
+{
+    Debug.Log("Utterance was paused");
+}
+</pre></p>
+</details></p>
+
+<p><details><summary><code>public static SpeechUtteranceCallback onSpeechUtteranceStarted</code></summary>
+<p><strong>Description</strong><br>
+Tells the delegate when the synthesizer has begun speaking an utterance.</p>
+<p><strong>Example</strong>
+<pre>private void Start()
+{
+    TTS.onSpeechUtteranceStarted = LogOnStarted;
+}
+
+private void LogOnStarted()
+{
+    Debug.Log("Utterance was started");
+}
+</pre></p>
+</details></p>
+
+<p><details><summary><code>public static StringUtteranceStringCallback onWillSpeakPartOfString</code></summary>
+<p><strong>Description</strong><br>
+Tells the delegate when the synthesizer is about to speak a portion of an utterance’s speechString.</p>
+<p><strong>Example</strong>
+<pre>private void Start()
+{
+    TTS.onWillSpeakPartOfString = LogOnWillSpeak;
+}
+
+private void LogOnWillSpeak(int startIndex, int stringLength, string utteranceSpeechString)
+{
+    var partOfSpring = utteranceSpeechString.Substring(startIndex, stringLength);
+    Debug.Log("Will speak: " + partOfSpring + " from the text: " + utteranceSpeechString);
 }
 </pre></p>
 </details></p>
