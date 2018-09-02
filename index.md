@@ -287,6 +287,20 @@ Parameters that affect the speech.</p>
 
 ### Modifying Default Behaviour
 
+#### Classes
+
+<p><details><summary><code>public enum VoiceQuality</code></summary>
+<p><strong>Description</strong><br>
+Constraints describing when speech may be paused or stopped.</p>
+  <p><strong>Values</strong><br>
+  <p><i>Immediate = 0</i><br>
+    Indicates that speech should pause or stop immediately.</p>
+  <p><i>Word = 1</i><br>
+    Indicates that speech should pause or stop after the word currently being spoken.</p></p>
+</details></p>
+
+#### Default Settings
+
 <p><details><summary><code>public static SpeechUtteranceParameters DefaultParameters</code></summary>
 <p><strong>Description</strong><br>
 Parameters used when calling Speak(string speechString)</p>
@@ -300,9 +314,7 @@ Parameters used when calling Speak(string speechString)</p>
 
 <p><details><summary><code>public static SpeechBoundary DefaultSpeechBoundaryForPause</code></summary>
 <p><strong>Description</strong><br>
-Constraints describing when speech may be paused<br>
-Immediate - Indicates that speech should pause or stop immediately.<br>
-Word - Indicates that speech should pause or stop after the word currently being spoken.</p>
+Constraints describing when speech may be paused</p>
 <p><strong>Example</strong>
   <pre>
     TTS.DefaultSpeechBoundaryForPause = SpeechBoundary.Word;
@@ -311,9 +323,7 @@ Word - Indicates that speech should pause or stop after the word currently being
 
 <p><details><summary><code>public static SpeechBoundary DefaultSpeechBoundaryForStop</code></summary>
 <p><strong>Description</strong><br>
-Constraints describing when speech may be stopped.<br>
-Immediate - Indicates that speech should pause or stop immediately.<br>
-Word - Indicates that speech should pause or stop after the word currently being spoken.</p>
+Constraints describing when speech may be stopped.</p>
 <p><strong>Example</strong>
   <pre>
     TTS.DefaultSpeechBoundaryForStop = SpeechBoundary.Word;
