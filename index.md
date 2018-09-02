@@ -330,6 +330,63 @@ Constraints describing when speech may be stopped.</p>
     TTS.Stop();</pre></p>
 </details></p>
 
+### Other Properties
+
+<p><details><summary><code>public static bool IsSpeaking</code></summary>
+<p><strong>Description</strong><br>
+A Boolean value that indicates whether the synthesizer is speaking.<br>
+</p>
+<p><strong>Return value</strong><br>
+  Returns true if the synthesizer is speaking or has utterances enqueued to speak, even if it is currently paused. Returns false if the synthesizer has finished speaking all utterances in its queue or if it has not yet been given an utterance to speak.</p>
+<p><strong>Example</strong>
+  <pre>
+  private void Update()
+  {
+      Debug.Log("Is speaking: " + TTS.IsSpeaking);
+  }</pre></p>
+</details></p>
+
+<p><details><summary><code>public static bool IsPaused</code></summary>
+<p><strong>Description</strong><br>
+A Boolean value that indicates whether speech has been paused.<br>
+</p>
+<p><strong>Return value</strong><br>
+  Returns true if the synthesizer has begun speaking an utterance and was paused using TTS.Pause; false otherwise.</p>
+<p><strong>Example</strong>
+  <pre>
+  private void Update()
+  {
+      Debug.Log("Is paused: " + TTS.IsPaused);
+  }</pre></p>
+</details></p>
+
+<p><details><summary><code>public static float UtteranceDefaultSpeechRate</code></summary>
+<p><strong>Description</strong><br>
+The default rate at which an utterance is spoken unless its rate property is changed.<br>
+</p>
+<p><strong>Example</strong>
+  <pre>
+  TTS.DefaultParameters.SpeechRate = TTS.UtteranceDefaultSpeechRate;</pre></p>
+</details></p>
+
+<p><details><summary><code>public static float UtteranceMinimumSpeechRate</code></summary>
+<p><strong>Description</strong><br>
+The minimum allowed speech rate.<br>
+</p>
+<p><strong>Example</strong>
+  <pre>
+  TTS.DefaultParameters.SpeechRate = TTS.UtteranceMinimumSpeechRate;</pre></p>
+</details></p>
+
+<p><details><summary><code>public static float UtteranceMaximumSpeechRate</code></summary>
+<p><strong>Description</strong><br>
+The maximum allowed speech rate.<br>
+</p>
+<p><strong>Example</strong>
+  <pre>
+  TTS.DefaultParameters.SpeechRate = TTS.UtteranceMaximumSpeechRate;</pre></p>
+</details></p>
+
 ### Setting Callbacks
 
 #### Delegate Types
