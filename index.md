@@ -104,9 +104,9 @@ Stops all speech at default boundary constraints.</p>
 <p><strong>Description</strong><br>
 Stops all speech at the specified boundary constraint.</p>
   <p><strong>Parameters</strong><br>
-  <i>speechBoundary</i> - A constant describing whether speech should pause immediately or only after finishing the word currently being spoken.</p>
+  <i>speechBoundary</i> - A constant describing whether speech should stop immediately or only after finishing the word currently being spoken.</p>
 <p><strong>Returns</strong><br>
-  Returns true if speech has paused, or false otherwise.</p>
+  Returns true if speech has stopped, or false otherwise.</p>
 <p><strong>Example</strong>
   <pre>TTS.Stop(SpeechBoundary.Word);</pre></p>
 </details></p>
