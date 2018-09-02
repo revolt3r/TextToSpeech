@@ -117,7 +117,7 @@ Stops all speech at the specified boundary constraint.</p>
 <p><strong>Description</strong><br>
 The voice used to speak the utterance.</p>
   <p><strong>Properties</strong><br>
-  <i>string Identifier</i> - The unique identifier for a voice object.<br>
+  <i>#string Identifier</i> - The unique identifier for a voice object.<br>
   <i>string Name</i> - The name for a voice object.<br>
   <i>string Language</i> - A BCP 47 code identifying the voice’s language and locale.<br>
   <i>VoiceQuality Quality</i> - The speech quality for a voice object.</p>
