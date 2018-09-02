@@ -13,7 +13,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 Enqueues an utterance to be spoken using DefaultParameters<br>
 <strong>Parameters</strong><br>
   <i>speechString</i> - The text to be spoken in the utterance.<br>
-<strong>Example</strong><br>
+<strong>Example</strong>
   <pre>TTS.Speak("Hello world!");</pre><br>
 </p>
 </details>
@@ -26,7 +26,7 @@ Enqueues an utterance to be spoken using a voice object for the specified langua
 <strong>Parameters</strong><br>
   <i>speechString</i> - The text to be spoken in the utterance.<br>
   <i>language</i> - A BCP 47 code specifying language and locale for a voice.<br>
-<strong>Example</strong><br>
+<strong>Example</strong>
   <pre>TTS.Speak("Hello world!", "en-US");</pre><br>
 </p>
 </details>
@@ -39,7 +39,7 @@ Enqueues an utterance to be spoken using a specific voice object<br>
 <strong>Parameters</strong><br>
   <i>speechString</i> - The text to be spoken in the utterance.<br>
   <i>voice</i> - The voice used to speak the utterance.<br>
-<strong>Example</strong><br>
+<strong>Example</strong>
   <pre>
   var voice = TTS.GetVoiceForLanguage("en-US");
   TTS.Speak("Hello world!", voice);</pre><br>
@@ -54,7 +54,7 @@ Enqueues an utterance to be spoken with default voice using specific parameters<
 <strong>Parameters</strong><br>
   <i>speechString</i> - The text to be spoken in the utterance.<br>
   <i>speechUtteranceParameters</i> - Parameters that affect the speech<br>
-<strong>Example</strong><br>
+<strong>Example</strong>
   <pre>
   var parameters = new SpeechUtteranceParameters();
   TTS.Speak("Hello world!", parameters);</pre><br>
@@ -63,14 +63,16 @@ Enqueues an utterance to be spoken with default voice using specific parameters<
 <br>
 
 <details><summary><code>public static void Speak(SpeechUtterance speechUtterance)</code></summary>
+  <p>
 <strong>Description</strong><br>
 Enqueues an utterance to be spoken with using specific parameters<br>
 <strong>Parameters</strong><br>
   <i>speechUtterance</i> - A chunk of text to be spoken, along with parameters that affect its speech.<br>
-<strong>Example</strong><br>
+<strong>Example</strong>
   <pre>
   var utterance = new SpeechUtterance("Hello world!");
   TTS.Speak(utterance);</pre><br>
+  </p>
 </details>
 <br>
 
