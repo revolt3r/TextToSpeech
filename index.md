@@ -195,6 +195,10 @@ private void LogOnStarted()
 <p><details><summary><code>public static StringUtteranceStringCallback onWillSpeakPartOfString</code></summary>
 <p><strong>Description</strong><br>
 Tells the delegate when the synthesizer is about to speak a portion of an utterance’s speechString.</p>
+  <p><strong>Parameters</strong><br>
+  <i>int startIndex</i> - The start index of the spoken part of the utterance string.<br>
+  <i>int stringLength</i> - The number of characters in the spoken part of the utterance string.<br>
+  <i>string utteranceSpeechString</i> - The utterance currently being spoken.</p>
 <p><strong>Example</strong>
 <pre>private void Start()
 {
