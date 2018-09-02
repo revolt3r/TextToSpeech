@@ -116,11 +116,11 @@ Stops all speech at the specified boundary constraint.</p>
 Called when the synthesizer has resumed speaking an utterance after being paused.</p>
 <p><strong>Example</strong>
   <pre>
-  TTS.onSpeechUtteranceCancelled = ClearTextProgress;
+TTS.onSpeechUtteranceCancelled = ClearTextProgress;
   
-  private void LogOnCancelled
-  {
-      Debug.Log("Utterance was cancelled");
-  }
+private void LogOnCancelled
+{
+  Debug.Log("Utterance was cancelled");
+}
     </pre></p>
 </details></p>
