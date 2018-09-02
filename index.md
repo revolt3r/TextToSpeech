@@ -109,7 +109,7 @@ Stops all speech at the specified boundary constraint.</p>
   <pre>TTS.Stop(SpeechBoundary.Word);</pre></p>
 </details></p>
 
-### Voices and Languages
+### Using Voices and Languages
 
 #### Classes
 
@@ -201,7 +201,7 @@ Returns all language codes (A BCP 47) for which voices are available.</p>
   Debug.Log("There are voices available in " + languages.length + " languages");</pre></p>
 </details></p>
 
-### Custom Parameters
+### Customizing Parameters
 
 #### Classes
 
@@ -259,6 +259,19 @@ Parameters that affect the speech.</p>
   Allowed values are in the range from 0.0 (silent) to 1.0 (loudest). The default volume is 1.0.</p>
   <p><strong>Constructors</strong>
   <pre>public SpeechUtteranceParameters()</pre></p></p>
+</details></p>
+
+#### Usages
+
+<p><details><summary><code>Using SpeechUtterance</code></summary>
+<p><strong>Example #1</strong><br>
+Returns all language codes (A BCP 47) for which voices are available.</p>
+<p><strong>Return value</strong><br>
+  Returns an array with all language codes (A BCP 47) for which voices are available.</p>
+<p><strong>Example</strong>
+  <pre>
+  var languages = TTS.GetAllAvailableLanguages();
+  Debug.Log("There are voices available in " + languages.length + " languages");</pre></p>
 </details></p>
 
 ### Setting Callbacks
