@@ -211,7 +211,7 @@ Returns all language codes (A BCP 47) for which voices are available.</p>
 A chunk of text to be spoken, along with parameters that affect its speech.</p>
   <p><strong>Properties</strong><br>
   <p><i>string SpeechString</i><br>
-    The unique identifier for a voice object.<br>
+    The text to be spoken in the utterance.<br>
   An utterance’s text cannot be changed once it is created. To speak different text, create a new utterance.</p>
   <p><i>float PitchMultiplier</i><br>
     The baseline pitch at which the utterance will be spoken.<br>
