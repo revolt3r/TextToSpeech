@@ -41,7 +41,7 @@ Enqueues an utterance to be spoken using a specific voice object<br>
   <i>voice</i> - The voice used to speak the utterance.<br>
 <strong>Example</strong><br>
   <code>var voice = TTS.GetVoiceForLanguage("en-US:);<br>
-  <code>TTS.Speak("Hello world!", voice);</code><br>
+  TTS.Speak("Hello world!", voice);</code><br>
 </p>
 </details>
 <br>
@@ -55,7 +55,7 @@ Enqueues an utterance to be spoken with default voice using specific parameters<
   <i>speechUtteranceParameters</i> - Parameters that affect the speech<br>
 <strong>Example</strong><br>
   <code>var parameters = new SpeechUtteranceParameters();<br>
-  <code>TTS.Speak("Hello world!", parameters);</code><br>
+  TTS.Speak("Hello world!", parameters);</code><br>
 </p>
 </details>
 <br>
@@ -68,7 +68,7 @@ Enqueues an utterance to be spoken with using specific parametersbr>
   <i>speechUtterance</i> - A chunk of text to be spoken, along with parameters that affect its speech.<br>
 <strong>Example</strong><br>
   <code>var utterance = new SpeechUtterance("Hello world!");<br>
-  <code>TTS.Speak(utterance);</code><br>
+  TTS.Speak(utterance);</code><br>
 </p>
 </details>
 <br>
