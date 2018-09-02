@@ -7,7 +7,7 @@
 <p><strong>Description</strong><br>
 Enqueues an utterance to be spoken using DefaultParameters</p>
 <p><strong>Parameters</strong><br>
-  <b>string speechString</b> - The text to be spoken in the utterance.</p>
+  <i>string speechString</i> - The text to be spoken in the utterance.</p>
 <p><strong>Example</strong>
   <pre>TTS.Speak("Hello world!");</pre></p>
 </details></p>
@@ -16,8 +16,8 @@ Enqueues an utterance to be spoken using DefaultParameters</p>
 <p><strong>Description</strong><br>
 Enqueues an utterance to be spoken using a voice object for the specified language and locale.</p>
 <p><strong>Parameters</strong><br>
-  <b>string speechString</b> - The text to be spoken in the utterance.<br>
-  <b>string language</b> - A BCP 47 code specifying language and locale for a voice.</p>
+  <i>string speechString</i> - The text to be spoken in the utterance.<br>
+  <i>string language</i> - A BCP 47 code specifying language and locale for a voice.</p>
 <p><strong>Example</strong>
   <pre>TTS.Speak("Hello world!", "en-US");</pre></p>
 </details></p>
@@ -26,8 +26,8 @@ Enqueues an utterance to be spoken using a voice object for the specified langua
 <p><strong>Description</strong><br>
 Enqueues an utterance to be spoken using a specific voice object</p>
 <p><strong>Parameters</strong><br>
-  <b>string speechString</b> - The text to be spoken in the utterance.<br>
-  <b>ISpeechSynthesisVoice voice</b> - The voice used to speak the utterance.</p>
+  <i>string speechString</i> - The text to be spoken in the utterance.<br>
+  <i>ISpeechSynthesisVoice voice</i> - The voice used to speak the utterance.</p>
 <p><strong>Example</strong>
   <pre>
   var voice = TTS.GetVoiceForLanguage("en-US");
@@ -38,8 +38,8 @@ Enqueues an utterance to be spoken using a specific voice object</p>
 <p><strong>Description</strong><br>
 Enqueues an utterance to be spoken with default voice using specific parameters</p>
 <p><strong>Parameters</strong><br>
-  <b>string speechString</b> - The text to be spoken in the utterance.<br>
-  <b>SpeechUtteranceParameters speechUtteranceParameters</b> - Parameters that affect the speech</p>
+  <i>string speechString</i> - The text to be spoken in the utterance.<br>
+  <i>SpeechUtteranceParameters speechUtteranceParameters</i> - Parameters that affect the speech</p>
 <p><strong>Example</strong>
   <pre>
   var parameters = new SpeechUtteranceParameters();
@@ -50,7 +50,7 @@ Enqueues an utterance to be spoken with default voice using specific parameters<
 <p><strong>Description</strong><br>
 Enqueues an utterance to be spoken with using specific parameters</p>
 <p><strong>Parameters</strong><br>
-  <b>SpeechUtterance speechUtterance</b> - A chunk of text to be spoken, along with parameters that affect its speech.</p>
+  <i>SpeechUtterance speechUtterance</i> - A chunk of text to be spoken, along with parameters that affect its speech.</p>
 <p><strong>Example</strong>
   <pre>
   var utterance = new SpeechUtterance("Hello world!");
@@ -82,7 +82,7 @@ Pauses speech at default boundary constraints.</p>
 <p><strong>Description</strong><br>
 Pauses speech at the specified boundary constraint.</p>
   <p><strong>Parameters</strong><br>
-  <b>SpeechBoundary speechBoundary</b> - A constant describing whether speech should pause immediately or only after finishing the word currently being spoken.</p>
+  <i>SpeechBoundary speechBoundary</i> - A constant describing whether speech should pause immediately or only after finishing the word currently being spoken.</p>
 <p><strong>Return value</strong><br>
   Returns true if speech has paused, or false otherwise.</p>
 <p><strong>Example</strong>
@@ -102,7 +102,7 @@ Stops all speech at default boundary constraints.</p>
 <p><strong>Description</strong><br>
 Stops all speech at the specified boundary constraint.</p>
   <p><strong>Parameters</strong><br>
-  <b>SpeechBoundary speechBoundary</b> - A constant describing whether speech should stop immediately or only after finishing the word currently being spoken.</p>
+  <i>SpeechBoundary speechBoundary</i> - A constant describing whether speech should stop immediately or only after finishing the word currently being spoken.</p>
 <p><strong>Return value</strong><br>
   Returns true if speech has stopped, or false otherwise.</p>
 <p><strong>Example</strong>
@@ -117,18 +117,18 @@ Stops all speech at the specified boundary constraint.</p>
 <p><strong>Description</strong><br>
 The voice used to speak the utterance.</p>
   <p><strong>Properties</strong><br>
-  <b>string Identifier</b> - The unique identifier for a voice object.<br>
-  <b>string Name</b> - The name for a voice object.<br>
-  <b>string Language</b> - A BCP 47 code identifying the voice’s language and locale.<br>
-  <b>VoiceQuality Quality</b> - The speech quality for a voice object.</p>
+  <i>string Identifier</i> - The unique identifier for a voice object.<br>
+  <i>string Name</i> - The name for a voice object.<br>
+  <i>string Language</i> - A BCP 47 code identifying the voice’s language and locale.<br>
+  <i>VoiceQuality Quality</i> - The speech quality for a voice object.</p>
 </details></p>
 
 <p><details><summary><code>public enum VoiceQuality</code></summary>
 <p><strong>Description</strong><br>
 The speech quality for a voice object.</p>
   <p><strong>Values</strong><br>
-  <b>Default = 1</b> - The lower quality version of a voice that is usually installed on the device by default.<br>
-  <b>Enhanced = 2</b> - The higher quality version of a voice that is usually downloaded by the user.</p>
+  <i>Default = 1</i> - The lower quality version of a voice that is usually installed on the device by default.<br>
+  <i>Enhanced = 2</i> - The higher quality version of a voice that is usually downloaded by the user.</p>
 </details></p>
 
 #### Usages
@@ -137,7 +137,7 @@ The speech quality for a voice object.</p>
 <p><strong>Description</strong><br>
 Returns a voice object for the specified language and locale.</p>
 <p><strong>Parameters</strong><br>
-  <b>string language</b> - A BCP 47 code specifying language and locale for a voice.</p>
+  <i>string language</i> - A BCP 47 code specifying language and locale for a voice.</p>
 <p><strong>Return value</strong><br>
   Returns null if no voice available for the specified language</p>
 <p><strong>Example</strong>
@@ -150,7 +150,7 @@ Returns a voice object for the specified language and locale.</p>
 <p><strong>Description</strong><br>
 Returns all available voice objects for the specified language and locale.</p>
 <p><strong>Parameters</strong><br>
-  <b>string language</b> - A BCP 47 code specifying language and locale for a voice.</p>
+  <i>string language</i> - A BCP 47 code specifying language and locale for a voice.</p>
 <p><strong>Return value</strong><br>
   Returns an empty array if no voice available for the specified language</p>
 <p><strong>Example</strong>
@@ -200,13 +200,13 @@ Returns all language codes (A BCP 47) for which voices are available.</p>
 <p><strong>Description</strong><br>
 A chunk of text to be spoken, along with parameters that affect its speech.</p>
   <p><strong>Properties</strong><br>
-  <b>string SpeechString</b> - The unique identifier for a voice object.<br>
-  <b>float PitchMultiplier</b> - The baseline pitch at which the utterance will be spoken.<br>
-  <b>float PreUtteranceDelay</b> - The amount of time in seconds a speech synthesizer will wait before actually speaking the utterance upon beginning to handle it.<br>
-    <b>float PostUtteranceDelay</b> - The amount of time in seconds a speech synthesizer will wait after the utterance is spoken before handling the next queued utterance.<br>
-    <b>float SpeechRate</b> - The rate at which the utterance will be spoken.<br>
-    <b>ISpeechSynthesisVoice Voice</b> - The voice used to speak the utterance.<br>
-  <b>float Volume</b> - The volume used when speaking the utterance.</p>
+  <i>string SpeechString</i> - The unique identifier for a voice object.<br>
+  <i>float PitchMultiplier</i> - The baseline pitch at which the utterance will be spoken.<br>
+  <i>float PreUtteranceDelay</i> - The amount of time in seconds a speech synthesizer will wait before actually speaking the utterance upon beginning to handle it.<br>
+    <i>float PostUtteranceDelay</i> - The amount of time in seconds a speech synthesizer will wait after the utterance is spoken before handling the next queued utterance.<br>
+    <i>float SpeechRate</i> - The rate at which the utterance will be spoken.<br>
+    <i>ISpeechSynthesisVoice Voice</i> - The voice used to speak the utterance.<br>
+  <i>float Volume</i> - The volume used when speaking the utterance.</p>
 </details></p>
 
 ### Setting Callbacks
@@ -222,9 +222,9 @@ void Method with no parameters.</p>
 <p><strong>Description</strong><br>
 void Method with 3 parameters: int startIndex, int stringLength, string utteranceSpeechString.</p>
   <p><strong>Parameters</strong><br>
-  <b>int startIndex</b> - The start index of the spoken part of the utterance string.<br>
-  <b>int stringLength</b> - The number of characters in the spoken part of the utterance string.<br>
-  <b>string utteranceSpeechString</b> - The utterance currently being spoken.</p>
+  <i>int startIndex</i> - The start index of the spoken part of the utterance string.<br>
+  <i>int stringLength</i> - The number of characters in the spoken part of the utterance string.<br>
+  <i>string utteranceSpeechString</i> - The utterance currently being spoken.</p>
 </details></p>
 
 #### Callbacks
@@ -312,9 +312,9 @@ private void LogOnStarted()
 <p><strong>Description</strong><br>
 Called when the synthesizer is about to speak a portion of an utterance’s speechString.</p>
   <p><strong>Parameters</strong><br>
-  <b>int startIndex</b> - The start index of the spoken part of the utterance string.<br>
-  <b>int stringLength</b> - The number of characters in the spoken part of the utterance string.<br>
-  <b>string utteranceSpeechString</b> - The utterance currently being spoken.</p>
+  <i>int startIndex</i> - The start index of the spoken part of the utterance string.<br>
+  <i>int stringLength</i> - The number of characters in the spoken part of the utterance string.<br>
+  <i>string utteranceSpeechString</i> - The utterance currently being spoken.</p>
 <p><strong>Example</strong>
 <pre>private void Start()
 {
