@@ -133,6 +133,65 @@ The speech quality for a voice object.</p>
 
 #### Usages
 
+<p><details><summary><code>public static ISpeechSynthesisVoice GetVoiceForLanguage(string language)</code></summary>
+<p><strong>Description</strong><br>
+Returns a voice object for the specified language and locale.</p>
+<p><strong>Parameters</strong><br>
+  <i>string language</i> - A BCP 47 code specifying language and locale for a voice.</p>
+<p><strong>Return value</strong><br>
+  Returns null if no voice available for the specified language</p>
+<p><strong>Example</strong>
+  <pre>
+  var voice = TTS.GetVoiceForLanguage("en-US");
+  TTS.Speak("Hello world!", voice);</pre></p>
+</details></p>
+
+<p><details><summary><code>public static ISpeechSynthesisVoice[] GetAllVoicesForLanguage(string language)</code></summary>
+<p><strong>Description</strong><br>
+Returns all available voice objects for the specified language and locale.</p>
+<p><strong>Parameters</strong><br>
+  <i>string language</i> - A BCP 47 code specifying language and locale for a voice.</p>
+<p><strong>Return value</strong><br>
+  Returns an empty array if no voice available for the specified language</p>
+<p><strong>Example</strong>
+  <pre>
+  var voices = TTS.GetAllVoicesForLanguage("en-US");
+  Debug.Log("There are " + voices.Length + "voices available for en-US");</pre></p>
+</details></p>
+
+<p><details><summary><code>public static ReadOnlyCollection<ISpeechSynthesisVoice> AllAvailableVoices</code></summary>
+<p><strong>Description</strong><br>
+Returns all available voices.</p>
+<p><strong>Return value</strong><br>
+  Returns a read-only collection of all available voices</p>
+<p><strong>Example</strong>
+  <pre>
+  var voices = TTS.AllAvailableVoices;
+  Debug.Log("There are " + voices.Count + "voices available on this device");</pre></p>
+</details></p>
+
+<p><details><summary><code>public static string CurrentLanguageCode</code></summary>
+<p><strong>Description</strong><br>
+Returns the code for the user’s current locale.</p>
+<p><strong>Return value</strong><br>
+  Returns a string containing BCP 47 language and locale code for the user’s current locale.</p>
+<p><strong>Example</strong>
+  <pre>
+  var languageCode = TTS.CurrentLanguageCode;
+  Debug.Log("Current language code is " + languageCode);</pre></p>
+</details></p>
+
+<p><details><summary><code>public static string[] GetAllAvailableLanguages()</code></summary>
+<p><strong>Description</strong><br>
+Returns all language codes (A BCP 47) for which voices are available.</p>
+<p><strong>Return value</strong><br>
+  Returns an array with all language codes (A BCP 47) for which voices are available.</p>
+<p><strong>Example</strong>
+  <pre>
+  var languages = TTS.GetAllAvailableLanguages();
+  Debug.Log("There are voice available in " + languages.length + " languages");</pre></p>
+</details></p>
+
 ### Setting Callbacks
 
 #### Delegate Types
