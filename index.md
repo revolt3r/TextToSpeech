@@ -63,7 +63,7 @@ Enqueues an utterance to be spoken with using specific parameters</p>
 <p><details><summary><code>public static bool Continue()</code></summary>
 <p><strong>Description</strong><br>
 Continues speech from the point at which it left off.</p>
-<p><strong>Returns</strong><br>
+<p><strong>Return value</strong><br>
   Returns true if speech has continued, or false otherwise.</p>
 <p><strong>Example</strong>
   <pre>TTS.Continue();</pre></p>
@@ -72,7 +72,7 @@ Continues speech from the point at which it left off.</p>
 <p><details><summary><code>public static bool Pause()</code></summary>
 <p><strong>Description</strong><br>
 Pauses speech at default boundary constraints.</p>
-<p><strong>Returns</strong><br>
+<p><strong>Return value</strong><br>
   Returns true if speech has paused, or false otherwise.</p>
 <p><strong>Example</strong>
   <pre>TTS.Pause();</pre></p>
@@ -83,7 +83,7 @@ Pauses speech at default boundary constraints.</p>
 Pauses speech at the specified boundary constraint.</p>
   <p><strong>Parameters</strong><br>
   <i>SpeechBoundary speechBoundary</i> - A constant describing whether speech should pause immediately or only after finishing the word currently being spoken.</p>
-<p><strong>Returns</strong><br>
+<p><strong>Return value</strong><br>
   Returns true if speech has paused, or false otherwise.</p>
 <p><strong>Example</strong>
   <pre>TTS.Pause(SpeechBoundary.Word);</pre></p>
@@ -92,7 +92,7 @@ Pauses speech at the specified boundary constraint.</p>
 <p><details><summary><code>public static bool Stop()</code></summary>
 <p><strong>Description</strong><br>
 Stops all speech at default boundary constraints.</p>
-<p><strong>Returns</strong><br>
+<p><strong>Return value</strong><br>
   Returns true if speech has stopped, or false otherwise.</p>
 <p><strong>Example</strong>
   <pre>TTS.Stop();</pre></p>
@@ -103,12 +103,35 @@ Stops all speech at default boundary constraints.</p>
 Stops all speech at the specified boundary constraint.</p>
   <p><strong>Parameters</strong><br>
   <i>SpeechBoundary speechBoundary</i> - A constant describing whether speech should stop immediately or only after finishing the word currently being spoken.</p>
-<p><strong>Returns</strong><br>
+<p><strong>Return value</strong><br>
   Returns true if speech has stopped, or false otherwise.</p>
 <p><strong>Example</strong>
   <pre>TTS.Stop(SpeechBoundary.Word);</pre></p>
 </details></p>
 
+### Voices and Languages
+
+#### Classes
+
+<p><details><summary><code>public interface ISpeechSynthesisVoice</code></summary>
+<p><strong>Description</strong><br>
+The voice used to speak the utterance.</p>
+  <p><strong>Properties</strong><br>
+  <i>string Identifier</i> - The unique identifier for a voice object.<br>
+  <i>string Name</i> - The name for a voice object.<br>
+  <i>string Language</i> - A BCP 47 code identifying the voice’s language and locale.<br>
+  <i>VoiceQuality Quality</i> - The speech quality for a voice object.</p>
+</details></p>
+
+<p><details><summary><code>public enum VoiceQuality</code></summary>
+<p><strong>Description</strong><br>
+The speech quality for a voice object.</p>
+  <p><strong>Values</strong><br>
+  <i>Default = 1</i> - The lower quality version of a voice that is usually installed on the device by default.<br>
+  <i>Enhanced = 2</i> - The higher quality version of a voice that is usually downloaded by the user.<br>
+</details></p>
+
+#### Usages
 
 ### Setting Callbacks
 
