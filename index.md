@@ -4,8 +4,7 @@ You can use the [editor on GitHub](https://github.com/revolt3r/TextToSpeech/edit
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Controlling Speech Synthesis
-
+### Synthesizing Speech
 
 <p><details><summary><code>public static void Speak(string speechString)</code></summary>
 <p><strong>Description</strong><br>
@@ -61,15 +60,56 @@ Enqueues an utterance to be spoken with using specific parameters</p>
   TTS.Speak(utterance);</pre></p>
 </details></p>
 
+### Controlling Speech Synthesis
 
+<p><details><summary><code>public static bool Continue()</code></summary>
+<p><strong>Description</strong><br>
+Continues speech from the point at which it left off.</p>
+<p><strong>Returns</strong><br>
+  Returns true if speech has continued, or false otherwise.</p>
+<p><strong>Example</strong>
+  <pre>TTS.Continue();</pre></p>
+</details></p>
 
+<p><details><summary><code>public static bool Pause()</code></summary>
+<p><strong>Description</strong><br>
+Pauses speech at default boundary constraints.</p>
+<p><strong>Returns</strong><br>
+  Returns true if speech has paused, or false otherwise.</p>
+<p><strong>Example</strong>
+  <pre>TTS.Pause();</pre></p>
+</details></p>
 
+<p><details><summary><code>public static bool Pause(SpeechBoundary speechBoundary)</code></summary>
+<p><strong>Description</strong><br>
+Pauses speech at the specified boundary constraint.</p>
+  <p><strong>Parameters</strong><br>
+  <i>speechBoundary</i> - A constant describing whether speech should pause immediately or only after finishing the word currently being spoken.</p>
+<p><strong>Returns</strong><br>
+  Returns true if speech has paused, or false otherwise.</p>
+<p><strong>Example</strong>
+  <pre>TTS.Pause(SpeechBoundary.Word);</pre></p>
+</details></p>
 
+<p><details><summary><code>public static bool Stop()</code></summary>
+<p><strong>Description</strong><br>
+Stops all speech at default boundary constraints.</p>
+<p><strong>Returns</strong><br>
+  Returns true if speech has stopped, or false otherwise.</p>
+<p><strong>Example</strong>
+  <pre>TTS.Stop();</pre></p>
+</details></p>
 
-
-
-
-
+<p><details><summary><code>public static bool Stop(SpeechBoundary speechBoundary)</code></summary>
+<p><strong>Description</strong><br>
+Stops all speech at the specified boundary constraint.</p>
+  <p><strong>Parameters</strong><br>
+  <i>speechBoundary</i> - A constant describing whether speech should pause immediately or only after finishing the word currently being spoken.</p>
+<p><strong>Returns</strong><br>
+  Returns true if speech has paused, or false otherwise.</p>
+<p><strong>Example</strong>
+  <pre>TTS.Stop(SpeechBoundary.Word);</pre></p>
+</details></p>
 
 
 
