@@ -110,8 +110,25 @@ Stops all speech at the specified boundary constraint.</p>
 </details></p>
 
 
-### Callback Delegates
+### Callbacks
 
+#### Delegate Types
+
+<p><details><summary><code>public delegate void SpeechUtteranceCallback()</code></summary>
+<p><strong>Description</strong><br>
+void Method with no parameters.</p>
+</details></p>
+
+<p><details><summary><code>public delegate void StringSpeechUtteranceCallback(int startIndex, int stringLength, string utteranceSpeechString)</code></summary>
+<p><strong>Description</strong><br>
+void Method with 3 parameters: int startIndex, int stringLength, string utteranceSpeechString.</p>
+  <p><strong>Parameters</strong><br>
+  <i>int startIndex</i> - The start index of the spoken part of the utterance string.<br>
+  <i>int stringLength</i> - The number of characters in the spoken part of the utterance string.<br>
+  <i>string utteranceSpeechString</i> - The utterance currently being spoken.</p>
+</details></p>
+
+#### Delegates
 <p><details><summary><code>public static SpeechUtteranceCallback onSpeechUtteranceCancelled</code></summary>
 <p><strong>Description</strong><br>
 Called when the synthesizer has resumed speaking an utterance after being paused.</p>
