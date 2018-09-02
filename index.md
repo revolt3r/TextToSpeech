@@ -123,12 +123,11 @@ The voice object used to speak the utterance.</p>
     The name for a voice object.</p>
   <p><i>string Language</i><br>
     A BCP 47 code identifying the voice’s language and locale.<br>
-    The locale of a voice reflects regional variations in pronunciation or accent; for example, a voice with code en-US speaks English text with a North American accent, and a voice with code en-AU speaks English text with an Australian accent.
-  </p>
+    The locale of a voice reflects regional variations in pronunciation or accent; for example, a voice with code en-US speaks English text with a North American accent, and a voice with code en-AU speaks English text with an Australian accent.</p>
   <p><i>VoiceQuality Quality</i><br>
     The speech quality for a voice object.<br>
     Default - he lower quality version of a voice that is usually installed on the device by default.<br>
-    Enhanced - The higher quality version of a voice that is usually downloaded by the user.</p>
+    Enhanced - The higher quality version of a voice that is usually downloaded by the user.</p></p>
 </details></p>
 
 <p><details><summary><code>public enum VoiceQuality</code></summary>
@@ -138,7 +137,7 @@ The speech quality for a voice object.</p>
   <p><i>Default = 1</i><br>
     The lower quality version of a voice that is usually installed on the device by default.</p>
   <p><i>Enhanced = 2</i><br>
-    The higher quality version of a voice that is usually downloaded by the user.</p>
+    The higher quality version of a voice that is usually downloaded by the user.</p></p>
 </details></p>
 
 #### Usages
@@ -230,7 +229,7 @@ A chunk of text to be spoken, along with parameters that affect its speech.</p>
   The default value is null, which causes the utterance to be spoken in the default voice.</p>
   <i>float Volume</i><br>
   The volume used when speaking the utterance.<br>
-  Allowed values are in the range from 0.0 (silent) to 1.0 (loudest). The default volume is 1.0.</p>
+  Allowed values are in the range from 0.0 (silent) to 1.0 (loudest). The default volume is 1.0.</p></p>
 </details></p>
 
 ### Setting Callbacks
