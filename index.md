@@ -8,46 +8,46 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 
 <p><details><summary><code>public static void Speak(string speechString)</code></summary>
-<strong>Description</strong><br>
-Enqueues an utterance to be spoken using DefaultParameters<br>
-<strong>Parameters</strong><br>
-  <i>speechString</i> - The text to be spoken in the utterance.<br>
-<strong>Example</strong>
-  <pre>TTS.Speak("Hello world!");</pre><br>
+<p><strong>Description</strong><br>
+Enqueues an utterance to be spoken using DefaultParameters</p>
+<p><strong>Parameters</strong><br>
+  <i>speechString</i> - The text to be spoken in the utterance.</p>
+<p><strong>Example</strong>
+  <pre>TTS.Speak("Hello world!");</pre></p>
 </details></p>
 
 <p><details><summary><code>public static void Speak(string speechString, string language)</code></summary>
-<strong>Description</strong><br>
-Enqueues an utterance to be spoken using a voice object for the specified language and locale.<br>
-<strong>Parameters</strong><br>
+<p><strong>Description</strong><br>
+Enqueues an utterance to be spoken using a voice object for the specified language and locale.</p>
+<p><strong>Parameters</strong><br>
   <i>speechString</i> - The text to be spoken in the utterance.<br>
-  <i>language</i> - A BCP 47 code specifying language and locale for a voice.<br>
-<strong>Example</strong>
-  <pre>TTS.Speak("Hello world!", "en-US");</pre><br>
+  <i>language</i> - A BCP 47 code specifying language and locale for a voice.</p>
+<p><strong>Example</strong>
+  <pre>TTS.Speak("Hello world!", "en-US");</pre></p>
 </details></p>
 
 <p><details><summary><code>public static void Speak(string speechString, ISpeechSynthesisVoice voice)</code></summary>
-<strong>Description</strong><br>
-Enqueues an utterance to be spoken using a specific voice object<br>
-<strong>Parameters</strong><br>
+<p><strong>Description</strong><br>
+Enqueues an utterance to be spoken using a specific voice object</p>
+<p><strong>Parameters</strong><br>
   <i>speechString</i> - The text to be spoken in the utterance.<br>
-  <i>voice</i> - The voice used to speak the utterance.<br>
-<strong>Example</strong>
+  <i>voice</i> - The voice used to speak the utterance.</p>
+<p><strong>Example</strong>
   <pre>
   var voice = TTS.GetVoiceForLanguage("en-US");
-  TTS.Speak("Hello world!", voice);</pre><br>
+  TTS.Speak("Hello world!", voice);</pre></p>
 </details></p>
 
 <p><details><summary><code>public static void Speak(string speechString, SpeechUtteranceParameters speechUtteranceParameters)</code></summary>
-<strong>Description</strong><br>
-Enqueues an utterance to be spoken with default voice using specific parameters<br>
-<strong>Parameters</strong><br>
+<p><strong>Description</strong><br>
+Enqueues an utterance to be spoken with default voice using specific parameters</p>
+<p><strong>Parameters</strong><br>
   <i>speechString</i> - The text to be spoken in the utterance.<br>
-  <i>speechUtteranceParameters</i> - Parameters that affect the speech<br>
-<strong>Example</strong>
+  <i>speechUtteranceParameters</i> - Parameters that affect the speech</p>
+<p><strong>Example</strong>
   <pre>
   var parameters = new SpeechUtteranceParameters();
-  TTS.Speak("Hello world!", parameters);</pre><br>
+  TTS.Speak("Hello world!", parameters);</pre></p>
 </details></p>
 
 <p><details><summary><code>public static void Speak(SpeechUtterance speechUtterance)</code></summary>
