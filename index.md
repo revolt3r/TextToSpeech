@@ -201,7 +201,7 @@ Returns all language codes (A BCP 47) for which voices are available.</p>
   Debug.Log("There are voices available in " + languages.length + " languages");</pre></p>
 </details></p>
 
-### Creating a speech with custom parameters
+### Custom Parameters
 
 #### Classes
 
