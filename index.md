@@ -406,13 +406,13 @@ void Method with 3 parameters: int startIndex, int stringLength, string utteranc
 </details></p>
 
 #### Callbacks
-<p><details><summary><code>public static SpeechUtteranceCallback onSpeechUtteranceCancelled</code></summary>
+<p><details><summary><code>public static SpeechUtteranceCallback OnSpeechCancelled;</code></summary>
 <p><strong>Description</strong><br>
 Called when the synthesizer has resumed speaking an utterance after being paused.</p>
 <p><strong>Example</strong>
 <pre>private void Start()
 {
-    TTS.onSpeechUtteranceCancelled = LogOnCancelled;
+    TTS.OnSpeechCancelled += LogOnCancelled;
 }
 
 private void LogOnCancelled()
@@ -422,13 +422,13 @@ private void LogOnCancelled()
 </pre></p>
 </details></p>
 
-<p><details><summary><code>public static SpeechUtteranceCallback onSpeechUtteranceContinued</code></summary>
+<p><details><summary><code>public static SpeechUtteranceCallback OnSpeechContinued</code></summary>
 <p><strong>Description</strong><br>
 Called when the synthesizer has resumed speaking an utterance after being paused.</p>
 <p><strong>Example</strong>
 <pre>private void Start()
 {
-    TTS.onSpeechUtteranceContinued = LogOnContinued;
+    TTS.OnSpeechContinued += LogOnContinued;
 }
 
 private void LogOnContinued()
@@ -438,13 +438,13 @@ private void LogOnContinued()
 </pre></p>
 </details></p>
 
-<p><details><summary><code>public static SpeechUtteranceCallback onSpeechUtteranceFinished</code></summary>
+<p><details><summary><code>public static SpeechUtteranceCallback OnSpeechFinished</code></summary>
 <p><strong>Description</strong><br>
 Called when the synthesizer has finished speaking an utterance.</p>
 <p><strong>Example</strong>
 <pre>private void Start()
 {
-    TTS.onSpeechUtteranceFinished = LogOnFinished;
+    TTS.OnSpeechFinished += LogOnFinished;
 }
 
 private void LogOnFinished()
@@ -454,13 +454,13 @@ private void LogOnFinished()
 </pre></p>
 </details></p>
 
-<p><details><summary><code>public static SpeechUtteranceCallback onSpeechUtterancePaused</code></summary>
+<p><details><summary><code>public static SpeechUtteranceCallback OnSpeechPaused</code></summary>
 <p><strong>Description</strong><br>
 Called when the synthesizer has paused while speaking an utterance.</p>
 <p><strong>Example</strong>
 <pre>private void Start()
 {
-    TTS.onSpeechUtterancePaused = LogOnPaused;
+    TTS.OnSpeechPaused += LogOnPaused;
 }
 
 private void LogOnPaused()
@@ -470,13 +470,13 @@ private void LogOnPaused()
 </pre></p>
 </details></p>
 
-<p><details><summary><code>public static SpeechUtteranceCallback onSpeechUtteranceStarted</code></summary>
+<p><details><summary><code>public static SpeechUtteranceCallback OnSpeechStarted</code></summary>
 <p><strong>Description</strong><br>
 Called when the synthesizer has begun speaking an utterance.</p>
 <p><strong>Example</strong>
 <pre>private void Start()
 {
-    TTS.onSpeechUtteranceStarted = LogOnStarted;
+    TTS.OnSpeechStarted += LogOnStarted;
 }
 
 private void LogOnStarted()
@@ -486,7 +486,7 @@ private void LogOnStarted()
 </pre></p>
 </details></p>
 
-<p><details><summary><code>public static StringSpeechUtteranceCallback onWillSpeakPartOfString</code></summary>
+<p><details><summary><code>public static StringSpeechUtteranceCallback OnWillSpeak</code></summary>
 <p><strong>Description</strong><br>
 Called when the synthesizer is about to speak a portion of an utterance’s speechString.</p>
   <p><strong>Parameters</strong><br>
@@ -496,7 +496,7 @@ Called when the synthesizer is about to speak a portion of an utterance’s spee
 <p><strong>Example</strong>
 <pre>private void Start()
 {
-    TTS.onWillSpeakPartOfString = LogOnWillSpeak;
+    TTS.OnWillSpeak += LogOnWillSpeak;
 }
 
 private void LogOnWillSpeak(int startIndex, int stringLength, string utteranceSpeechString)
