@@ -303,7 +303,7 @@ Constraints describing when speech may be paused or stopped.</p>
 
 <p><details><summary><code>public static SpeechUtteranceParameters DefaultParameters</code></summary>
 <p><strong>Description</strong><br>
-Parameters used when calling Speak(string speechString)</p>
+Parameters used when calling Speak without custom SpeechUtteranceParameters</p>
 <p><strong>Example</strong>
   <pre>
     TTS.DefaultParameters.Voice = TTS.GetVoiceForLanguage("en-US");
