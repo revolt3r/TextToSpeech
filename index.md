@@ -1,3 +1,27 @@
+## FAQ
+
+<p><details><summary>How to get started?</summary>
+In your code, add the following line at the top to each class where you want to use Text To Speech:
+ <pre>using GoodEnough.TextToSpeech;</pre>
+Then use this method to make your device speak any text: <pre>TTS.Speak("Your text");</pre>
+</details></p>
+
+<p><details><summary>Can I test the plugin in Unity Editor?</summary>
+This plugin works only on iOS or tvOS devices. You will need to make a build and start it on an iPhone, iPad or Apple TV device to hear the speech.
+</details></p>
+
+<p><details><summary>Does the plugin require an active Internet connection?</summary>
+No internet is required for the plugin to work.
+</details></p>
+
+<p><details><summary>How many languages are supported by the plugin?</summary>
+The number of supported languages depends on the device and iOS version. Go to <b>Settings->Siri & Search->Language</b> to check how many languages your device supports.
+</details></p>
+
+<p><details><summary>Is it possible to switch voices between the sentences?</summary>
+Yes, you can speak each sentence with a different voice.
+</details></p>
+
 ## Documentation
 
 
